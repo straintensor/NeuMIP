@@ -1,9 +1,9 @@
 # NeuMIP: Multi-Resolution Neural Materials
-##SIGGRAPH 2021
+## SIGGRAPH 2021
 
 
 
-https://cseweb.ucsd.edu/~viscomp/projects/NeuMIP/
+https://cseweb.ucsd.edu/~viscomp/projects/NeuMIP
 
 ## Setup and prerequisites 
 
@@ -19,21 +19,19 @@ The code is licensed under BSD license.
 
 ## Dataset
 Here's the link to the datasets and models:
-https://drive.google.com/drive/folders/1EbzMlpmE7f49jTs2IY7oMQKZAGAfl3M5?usp=sharing…
+https://drive.google.com/drive/folders/1EbzMlpmE7f49jTs2IY7oMQKZAGAfl3M5
 
 ## Training and Running
 
 To train:
 ```
-./rung.sh 0 ./neural_rendering.py --dataset DATASET_NAME  --max_iter 30000 --outm  MODEL_NAME  --experiment  StandardRawLongShadowMaskOnly  --batch 4  --loss l1
+./rung.sh 0 ./neural_rendering.py --dataset DATASET_NAME  --max_iter 30000 --outm  MODEL_NAME  --experiment  StandardRawLongShadowMaskOnly  --batch 4  --loss comb2
  ```
 
  To visualize it:
 ```
 ./run.sh neural_rendering.py --inm wool2.pth --vis 
 ```
-
-
 
 
 The main code is in the neural_rendering.py file. Beware, the code supports different configurations/architectures. Please, use  -experiment  StandardRawLongShadowMaskOnly 
