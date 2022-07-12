@@ -25,7 +25,10 @@ https://drive.google.com/drive/folders/1EbzMlpmE7f49jTs2IY7oMQKZAGAfl3M5
 
 To train:
 ```
-./rung.sh 0 ./neural_rendering.py --dataset DATASET_NAME  --max_iter 30000 --outm  MODEL_NAME  --experiment  StandardRawLongShadowMaskOnly  --batch 4  --loss comb2
+./rung.sh 0 ./neural_rendering.py --dataset DATASET_NAME \
+     --max_iter 30000 --outm  MODEL_NAME \
+     --experiment  StandardRawLongShadowMaskOnly \
+     --batch 4  --loss comb2
  ```
 
  To visualize it:
